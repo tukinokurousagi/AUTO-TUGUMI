@@ -2,9 +2,6 @@ import os
 import datetime
 
 def save_text_to_documents(filename: str, text: str) -> str:
-    """
-    AndroidのDocuments（/storage/emulated/0/Documents/AutoTUGUMI_logs）にテキストファイル保存
-    """
     base_dir = "/storage/emulated/0/Documents/AutoTUGUMI_logs"
     try:
         os.makedirs(base_dir, exist_ok=True)
